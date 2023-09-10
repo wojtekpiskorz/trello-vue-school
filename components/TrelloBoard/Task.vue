@@ -1,21 +1,20 @@
 <script setup lang="ts">
-import type { Task } from '~~/types'
+import type {Task} from '~~/types'
 
 defineProps<{
-  task: Task
+    task: Task
 }>()
 
 </script>
 
 <template>
   <div
-    class="task bg-white p-2 mb-2 rounded shadow-sm w-full"
+    class="mb-2 rounded bg-white p-2 shadow-sm   task w-[250px]"
     :title="task.createdAt.toLocaleDateString()"
   >
     {{ task.title }}
   </div>
 </template>
-
 
 
 <style scoped></style>
